@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0f766e">
+<title>Anatomy Lesson 1 – Revision Quiz | First-Year MBBS Study Hub – India</title>
+<style>
+:root{--teal:#0f766e;--teal-dark:#115e59;--ink:#17212b;--muted:#5d6b78;--bg:#f3f7f8;--card:#fff;--line:#dce5e8;--good:#e8f7ee;--good-ink:#166534;--bad:#fff0ef;--bad-ink:#a12622;--focus:#99f6e4}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}
+.wrap{width:min(850px,100%);margin:0 auto;padding:18px 14px 42px}
+.hero{background:linear-gradient(135deg,#115e59,#0f766e 62%,#0e7490);color:white;padding:25px 22px;border-radius:20px;box-shadow:0 8px 24px #0f766e20}
+.brand{font-size:.78rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;opacity:.9}
+h1{font-size:clamp(1.45rem,4vw,2.15rem);line-height:1.2;margin:8px 0}
+.subtitle{margin:8px 0 0;color:#e5fffb}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:17px}
+.pill{font-size:.82rem;padding:5px 10px;border-radius:999px;background:#ffffff20;border:1px solid #ffffff45}
+.notice{background:#eaf5f4;border:1px solid #c6e6e2;padding:12px 14px;border-radius:12px;margin:16px 0;color:#174b49;font-size:.93rem}
+.progress-box{margin:16px 0 18px}
+.progress-label{display:flex;justify-content:space-between;gap:12px;font-size:.88rem;color:var(--muted);margin-bottom:7px}
+.progress{height:8px;background:#dce7e9;border-radius:99px;overflow:hidden}
+.progress>div{height:100%;width:0;background:var(--teal);transition:width .2s}
+.question{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;margin:14px 0;box-shadow:0 3px 12px #14232b06}
+.qtop{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.qnum{display:grid;place-items:center;min-width:34px;height:34px;border-radius:10px;background:#e1f4f1;color:var(--teal-dark);font-weight:800}
+.qtitle{font-weight:750;font-size:1.02rem}
+.options{display:grid;gap:9px;margin-top:13px}
+.option{display:flex;align-items:flex-start;gap:10px;border:1px solid var(--line);border-radius:11px;padding:11px 12px;cursor:pointer;background:white;transition:border-color .15s,background .15s}
+.option:hover{border-color:#74b9b1;background:#f7fffd}
+.option:has(input:checked){border-color:var(--teal);background:#effcf9;box-shadow:0 0 0 1px var(--teal) inset}
+.option input{margin:4px 0 0;accent-color:var(--teal);flex:0 0 auto;width:17px;height:17px}
+.optlabel{font-weight:800;color:var(--teal-dark);min-width:20px}
+.option-text{flex:1}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0}
+button{font:inherit;font-weight:750;border:0;border-radius:11px;padding:12px 18px;cursor:pointer}
+button:focus-visible,.option:focus-within{outline:3px solid var(--focus);outline-offset:2px}
+.primary{background:var(--teal);color:white;flex:1;min-width:180px}
+.primary:hover{background:var(--teal-dark)}
+.secondary{background:#e4ecee;color:#263943}
+button:disabled{opacity:.55;cursor:not-allowed}
+#result{display:none;background:white;border:1px solid var(--line);border-radius:18px;padding:22px;margin:22px 0}
+.scoreline{font-size:2rem;font-weight:850;color:var(--teal);margin:0}
+.result-note{color:var(--muted);margin:.25rem 0 1rem}
+.feedback{margin-top:13px;border-radius:10px;padding:11px 12px;font-size:.93rem;border:1px solid var(--line)}
+.feedback.good{background:var(--good);color:var(--good-ink);border-color:#b6e5c6}
+.feedback.bad{background:var(--bad);color:var(--bad-ink);border-color:#f5c4c0}
+.correct-answer{font-size:.9rem;margin-top:8px;color:var(--muted)}
+.explanation-title{font-size:.78rem;font-weight:850;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-top:14px}
+footer{text-align:center;color:var(--muted);font-size:.83rem;margin:26px 8px 0}
+@media(min-width:640px){.wrap{padding:28px 20px 50px}.question{padding:21px}.hero{padding:30px}}
+@media print{body{background:white}.wrap{max-width:none;padding:0}.hero{background:#fff;color:#111;border:1px solid #aaa;box-shadow:none}.subtitle{color:#333}.pills,.actions,.notice{display:none}.question{break-inside:avoid;box-shadow:none}.option{padding:6px}#result{display:block}}
+</style>
+</head>
+<body>
+<main class="wrap">
+<header class="hero">
+  <div class="brand">First-Year MBBS Study Hub – India</div>
+  <h1>Anatomy Lesson 1: Revision Quiz</h1>
+  <p class="subtitle">Anatomical position, planes and directional terminology</p>
+  <div class="pills"><span class="pill">10 questions</span><span class="pill">1 mark each</span><span class="pill">Instant result</span></div>
+</header>
+<div class="notice"><strong>Instructions:</strong> Select one answer for each question. Submit when you finish to see your score, the correct answers and explanations. This quiz runs offline in your browser; your answers are not sent anywhere.</div>
+<div class="progress-box" aria-live="polite">
+  <div class="progress-label"><span id="answeredText">Answered 0 of 10</span><span id="progressPercent">0%</span></div>
+  <div class="progress" role="progressbar" aria-label="Quiz completion" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="progressBar"><div id="progressFill"></div></div>
+</div>
+<form id="quizForm" novalidate>
+<div id="questions"></div>
+<div class="actions">
+  <button class="primary" id="submitBtn" type="submit">Submit Quiz &amp; See Result</button>
+  <button class="secondary" id="resetBtn" type="button">Reset Quiz</button>
+</div>
+</form>
+<section id="result" aria-live="polite" tabindex="-1">
+  <div class="brand">Your result</div>
+  <h2 id="resultHeading">Quiz complete</h2>
+  <p class="scoreline" id="scoreLine">0 / 10</p>
+  <p class="result-note" id="resultNote"></p>
+  <p id="resultSummary"></p>
+  <div class="actions"><button class="primary" type="button" id="retryBtn">Try Again</button><button class="secondary" type="button" id="printBtn">Print Result</button></div>
+  <h3>Answer review</h3>
+  <p class="result-note">Review each explanation to reinforce the key concepts.</p>
+  <div id="review"></div>
+</section>
+<footer>MEDPATH-style independent study resource • First-Year MBBS Study Hub – India</footer>
+</main>
+<script>
+const quiz = [
+ {q:"In the standard anatomical position, the palms face which direction?",opts:["Posteriorly (backward)","Anteriorly (forward)","Medially (toward the midline)","Inferiorly (toward the feet)"],a:1,exp:"In the standard anatomical position, the person stands upright, faces forward, arms at the sides, and palms face anteriorly."},
+ {q:"Which plane divides the body into equal right and left halves?",opts:["Coronal (frontal) plane","Transverse plane","Midsagittal (median) plane","Oblique plane"],a:2,exp:"The midsagittal, or median, plane passes through the midline and divides the body into equal right and left halves."},
+ {q:"The nose is ______ to the ears.",opts:["Lateral","Medial","Distal","Inferior"],a:1,exp:"Medial means nearer to the body's midline. The nose is closer to the midline than the ears."},
+ {q:"Which plane divides the body into anterior and posterior parts?",opts:["Transverse plane","Midsagittal plane","Parasagittal plane","Coronal (frontal) plane"],a:3,exp:"The coronal, or frontal, plane separates the body into front (anterior) and back (posterior) portions."},
+ {q:"In the standard anatomical position, the thumbs point laterally.",opts:["True","False"],a:0,exp:"With the palms facing forward, the thumbs point away from the body's midline, so they are lateral."},
+ {q:"The elbow is ______ to the wrist.",opts:["Distal","Superficial","Proximal","Inferior"],a:2,exp:"Proximal means nearer to the trunk or point of attachment. The elbow is closer to the shoulder/trunk than the wrist is."},
+ {q:"Select the TWO correctly matched directional terms.",opts:["Superior — toward the head","Inferior — toward the feet","Lateral — closer to the midline","Superficial — farther from the body surface"],a:[0,1],multi:true,exp:"Superior means toward the head; inferior means toward the feet. Lateral means farther from the midline, and superficial means nearer to the body surface."},
+ {q:"The transverse plane divides the body into anterior and posterior parts.",opts:["True","False"],a:1,exp:"This statement is false. A transverse plane divides the body into superior (upper) and inferior (lower) parts; a coronal plane divides anterior and posterior parts."},
+ {q:"The skin is ______ to the underlying skeletal muscles.",opts:["Deep","Distal","Medial","Superficial"],a:3,exp:"Superficial means closer to the body surface. The skin lies superficial to the underlying skeletal muscles."},
+ {q:"Which term means 'toward the body's midline'?",opts:["Lateral","Medial","Distal","Deep"],a:1,exp:"Medial describes a position nearer to the body's midline; lateral means farther from it."}
+];
+const letters=["A","B","C","D"];
+const questionsEl=document.getElementById("questions");
+const form=document.getElementById("quizForm");
+const result=document.getElementById("result");
+let submitted=false;
+function render(){
+ questionsEl.innerHTML="";
+ quiz.forEach((item,i)=>{
+  const card=document.createElement("section");card.className="question";card.id="question-"+i;
+  const top=document.createElement("div");top.className="qtop";
+  const num=document.createElement("div");num.className="qnum";num.textContent=String(i+1);
+  const title=document.createElement("div");title.className="qtitle";title.textContent=item.q;
+  top.append(num,title);card.append(top);
+  if(item.multi){const small=document.createElement("div");small.className="result-note";small.textContent="Select all that apply (2 answers).";card.append(small)}
+  const options=document.createElement("div");options.className="options";
+  item.opts.forEach((opt,j)=>{
+   const label=document.createElement("label");label.className="option";
+   const input=document.createElement("input");input.type=item.multi?"checkbox":"radio";input.name="q"+i;input.value=String(j);input.setAttribute("aria-label",letters[j]+": "+opt);
+   input.addEventListener("change",updateProgress);
+   const letter=document.createElement("span");letter.className="optlabel";letter.textContent=letters[j]+".";
+   const text=document.createElement("span");text.className="option-text";text.textContent=opt;
+   label.append(input,letter,text);options.append(label);
+  });
+  card.append(options);questionsEl.append(card);
+ });
+ updateProgress();
+}
+function getAnswers(i){return [...form.querySelectorAll(`[name="q${i}"]:checked`)].map(el=>Number(el.value)).sort((a,b)=>a-b)}
+function updateProgress(){
+ let count=0;quiz.forEach((_,i)=>{if(getAnswers(i).length)count++});
+ const pct=Math.round(count/quiz.length*100);
+ document.getElementById("answeredText").textContent=`Answered ${count} of ${quiz.length}`;
+ document.getElementById("progressPercent").textContent=pct+"%";
+ document.getElementById("progressFill").style.width=pct+"%";
+ document.getElementById("progressBar").setAttribute("aria-valuenow",String(pct));
+}
+function sameArray(a,b){return a.length===b.length&&a.every((v,i)=>v===b[i])}
+function submitQuiz(e){
+ if(e)e.preventDefault();if(submitted)return;
+ const unanswered=quiz.map((_,i)=>i).filter(i=>getAnswers(i).length===0);
+ if(unanswered.length){
+  const ok=confirm(`You have not answered ${unanswered.length} question(s). Submit anyway? Choose Cancel to return to the quiz.`);
+  if(!ok){document.getElementById("question-"+unanswered[0]).scrollIntoView({behavior:"smooth",block:"center"});return}
+ }
+ submitted=true;
+ let score=0,correctCount=0,wrongCount=0,blankCount=0;
+ const review=document.getElementById("review");review.innerHTML="";
+ quiz.forEach((item,i)=>{
+  const user=getAnswers(i);const answer=Array.isArray(item.a)?item.a:[item.a];
+  const isCorrect=sameArray(user,answer);
+  if(isCorrect){score++;correctCount++}else if(user.length===0){blankCount++}else{wrongCount++}
+  const card=document.createElement("article");card.className="question";
+  const top=document.createElement("div");top.className="qtop";
+  const num=document.createElement("div");num.className="qnum";num.textContent=String(i+1);
+  const title=document.createElement("div");title.className="qtitle";title.textContent=item.q;
+  top.append(num,title);card.append(top);
+  item.opts.forEach((opt,j)=>{
+   const row=document.createElement("div");row.className="option";
+   const mark=document.createElement("span");mark.className="optlabel";mark.textContent=letters[j]+".";
+   const txt=document.createElement("span");txt.className="option-text";txt.textContent=opt;
+   row.append(mark,txt);
+   if(answer.includes(j)){row.style.borderColor="#66b98a";row.style.background="#f0fbf4"}
+   if(user.includes(j)&&!answer.includes(j)){row.style.borderColor="#e28b84";row.style.background="#fff4f3"}
+   card.append(row);
+  });
+  const fb=document.createElement("div");fb.className="feedback "+(isCorrect?"good":"bad");
+  fb.textContent=(isCorrect?"Correct — ":"Not quite — ")+(user.length?`Your selection: ${user.map(j=>letters[j]).join(", ")}. `:"No answer selected. ")+(item.multi?"Correct answers: A and B.":`Correct answer: ${letters[answer[0]]}.`);
+  card.append(fb);
+  const expTitle=document.createElement("div");expTitle.className="explanation-title";expTitle.textContent="Explanation";
+  const exp=document.createElement("p");exp.textContent=item.exp;
+  card.append(expTitle,exp);review.append(card);
+ });
+ const percent=Math.round(score/quiz.length*100);
+ document.getElementById("resultHeading").textContent=percent>=80?"Excellent work!":percent>=60?"Good effort — keep revising.":"Keep practising — you can improve.";
+ document.getElementById("scoreLine").textContent=`${score} / ${quiz.length} (${percent}%)`;
+ document.getElementById("resultNote").textContent=`Correct: ${correctCount} • Incorrect: ${wrongCount} • Unanswered: ${blankCount}`;
+ document.getElementById("resultSummary").textContent=percent>=80?"Strong understanding of the foundational anatomical terms. Review any missed explanations before moving on.":percent>=60?"You have a useful foundation. Revisit the explanations for the questions you missed, then try again.":"Review anatomical position, body planes and directional terms, then retake the quiz to check your progress.";
+ document.getElementById("submitBtn").disabled=true;
+ form.querySelectorAll("input").forEach(el=>el.disabled=true);
+ result.style.display="block";result.focus();result.scrollIntoView({behavior:"smooth",block:"start"});
+}
+function resetQuiz(){
+ submitted=false;form.reset();form.querySelectorAll("input").forEach(el=>el.disabled=false);
+ document.getElementById("submitBtn").disabled=false;result.style.display="none";document.getElementById("review").innerHTML="";
+ render();window.scrollTo({top:0,behavior:"smooth"});
+}
+form.addEventListener("submit",submitQuiz);
+document.getElementById("resetBtn").addEventListener("click",resetQuiz);
+document.getElementById("retryBtn").addEventListener("click",resetQuiz);
+document.getElementById("printBtn").addEventListener("click",()=>window.print());
+render();
+</script>
+</body>
+</html>
